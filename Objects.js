@@ -27,20 +27,36 @@
 // }
 // console.log(sum);
 
-let menu = {
-  width: 200,
-  height: 300,
-  title: "My menu"
-};
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title: "My menu"
+// };
 
-multiplyNumeric(menu)
+// multiplyNumeric(menu)
 
-function multiplyNumeric(obj) {
-  for (let key in obj){
-    if (Number(obj[key])) {
-     obj[key] *= 2 
-     } else continue;
-  }
+// function multiplyNumeric(obj) {
+//   for (let key in obj){
+//     if (Number(obj[key])) {
+//      obj[key] *= 2 
+//      } else continue;
+//   }
+//   for (let key in obj){
+//     console.log(key);
+//   }
+// }
+
+// console.log(menu);
+
+let iSum = 0;
+for (var iNum = 2; iNum <= 10; iNum += 2) {
+  iSum++;
 }
 
-console.log(menu);
+if (iNum >= 10) {
+  let iSum = 10;
+  console.log(iSum);
+}
+
+console.log(iSum);
+console.log(iNum);
