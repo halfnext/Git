@@ -51,10 +51,21 @@
 
 // alert( arr ); // [3, 1]
 
-function sortArray(arr) {
-    arr.sort((a, b) => b - a );
+// function sortArray(arr) {
+//     arr.sort((a, b) => b - a );
+// };
+
+// let arr = [5, 2, 1, -10, 8];
+// sortArray(arr)
+// alert( arr )
+
+function copySorted(arr) {
+    return arr.slice().sort((a, b) => a.localeCompare(b) )
 };
 
-let arr = [5, 2, 1, -10, 8];
-sortArray(arr)
-alert( arr )
+let arr = ["HTML", "JavaScript", "CSS"];
+
+let sorted = copySorted(arr);
+
+alert( sorted ); // CSS, HTML, JavaScript
+alert( arr ); // HTML, JavaScript, CSS (no changes)
