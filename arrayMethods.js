@@ -25,14 +25,30 @@
 // camelize("list-style-image") == 'listStyleImage';
 // camelize("-webkit-transition") == 'WebkitTransition';
 
-function filterRange(arr, a, b) {
-//    return arr.map(item => { 
-//        if (item >= a && item <= b) 
-//        return item;
-//     }); 
-    return arr.filter(item => (item >= a && item <= b));
+// function filterRange(arr, a, b) {
+// //    return arr.map(item => { 
+// //        if (item >= a && item <= b) 
+// //        return item;
+// //     }); 
+//     return arr.filter(item => (item >= a && item <= b));
+// };
+
+// let arr = [5, 3, 8, 1];
+
+// let filtered = filterRange(arr, 1, 4);
+
+
+
+function filterRangeInPlace(arr, a, b) {
+    for (let key of arr) {
+        if (a <= key <= b) {
+            arr.splice(arr.indexOf(key), 1);
+        };
+    };
 };
 
 let arr = [5, 3, 8, 1];
 
-let filtered = filterRange(arr, 1, 4);
+filterRangeInPlace(arr, 1, 4)
+
+alert( arr ); // [3, 1]
