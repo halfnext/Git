@@ -59,13 +59,19 @@
 // sortArray(arr)
 // alert( arr )
 
-function copySorted(arr) {
-    return arr.slice().sort((a, b) => a.localeCompare(b) )
-};
+// function copySorted(arr) {
+//     return arr.slice().sort((a, b) => a.localeCompare(b) )
+// };
 
-let arr = ["HTML", "JavaScript", "CSS"];
+// let arr = ["HTML", "JavaScript", "CSS"];
 
-let sorted = copySorted(arr);
+// let sorted = copySorted(arr);
 
-alert( sorted ); // CSS, HTML, JavaScript
-alert( arr ); // HTML, JavaScript, CSS (no changes)
+// alert( sorted ); // CSS, HTML, JavaScript
+// alert( arr ); // HTML, JavaScript, CSS (no changes)
+
+function isFin(arg){
+    return isFinite(arg);
+}
+
+isFin(10);
