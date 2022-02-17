@@ -37,18 +37,24 @@
 
 // let filtered = filterRange(arr, 1, 4);
 
+// function filterRangeInPlace(arr, a, b) {
+//     for (let key of arr) {
+//         if (a <= key <= b) {
+//             arr.splice(arr.indexOf(key), 1);
+//         };
+//     };
+// };
 
+// let arr = [5, 3, 8, 1];
 
-function filterRangeInPlace(arr, a, b) {
-    for (let key of arr) {
-        if (a <= key <= b) {
-            arr.splice(arr.indexOf(key), 1);
-        };
-    };
+// filterRangeInPlace(arr, 1, 4)
+
+// alert( arr ); // [3, 1]
+
+function sortArray(arr) {
+    arr.sort((a, b) => b - a );
 };
 
-let arr = [5, 3, 8, 1];
-
-filterRangeInPlace(arr, 1, 4)
-
-alert( arr ); // [3, 1]
+let arr = [5, 2, 1, -10, 8];
+sortArray(arr)
+alert( arr )
