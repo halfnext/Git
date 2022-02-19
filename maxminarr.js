@@ -16,6 +16,11 @@ function getMinMax(aArray) {
     let obj = {
         [min]: idxMin,
         [max]: idxMax,
+        [Symbol.toPrimitive](){
+            if(obj[min] != undefined && obj[max] != undefined) {
+            return (`Min: ${min} at index ${idxMin}. Max: ${max} at index ${idxMax};`) 
+        }
+        }
         };
     return obj;    
 }

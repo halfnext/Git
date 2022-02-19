@@ -70,8 +70,18 @@
 // alert( sorted ); // CSS, HTML, JavaScript
 // alert( arr ); // HTML, JavaScript, CSS (no changes)
 
-function isFin(arg){
-    return isFinite(arg);
-}
+// function isFin(arg){
+//     return isFinite(arg);
+// }
 
-isFin(10);
+// isFin(10);
+
+// function toHex(arg) {
+//     if (isNaN(arg) || arg === null) {return "Wrong number"};
+//     return +arg.toString(16)
+// }
+
+let aArray = [1,2,3,4,5];
+let newArr = aArray.slice().filter(item => (3 <= item && item <= 4))
+console.log(aArray);
+console.log(newArr);
